@@ -1,5 +1,3 @@
-#画像をminecraftに映し出す
-#何とかして動画もできるようにしたい
 import sys
 from mine import *
 from PIL import Image
