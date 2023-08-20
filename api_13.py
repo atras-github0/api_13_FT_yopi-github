@@ -16,9 +16,13 @@ mc.postToChat("A")
 def getargv():
     length = len(sys.argv)
     if length == 1:
-        print("サイズを指定してください\napi.py <size_Y> <size_X>")
+        filename = filedialog.askopenfilename()
+        size_X = "100"
+        size_Y = "100"
     elif length == 2:
-        print("サイズを指定してください\napi.py <size_Y> <size_X>")
+        filename = filedialog.askopenfilename()
+        size_X = sys.argv[1]
+        size_Y = sys.argv[1]
     elif length == 3:
         filename = filedialog.askopenfilename()
         size_X = sys.argv[1]
